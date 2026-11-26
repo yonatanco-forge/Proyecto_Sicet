@@ -1,0 +1,192 @@
+:root {
+    --color-principal-cian:#00B4D8;
+    --sicet-gris: #eaf2f8;
+    --sicet-morado:#6E11B0;
+    --sicet-azul-oscuro:#00008B;
+    --sicet-azul:#6495ED;
+    --sicet-verde:#14213D;
+    --sidebar-ancho: 250px
+}
+
+body {
+    margin: 10;
+    font-family: "segoe UI" Roboto, arial, sans-serif;
+    background-color: rgb(248,182,0);
+}
+
+.texto-sena{
+    color: var(--sicet-morado);
+}
+
+.btn-sena{
+    --bs-btn-color:#fff;
+    --bs-btn-bg:var(--color-principal-cian);
+    --bs-btn-border-color:var(--color-principal-cian);
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg:var(--sicet-morado);
+    --bs-btn-border-color:var(--sicet-morado);
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:var(--sicet-morado);
+    --bs-btn-active-border-color:var(--sicet-morado)
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus{
+    border-color:var(--sicet-azul-oscuro);
+    box-shadow: 0 0 0.25rem rgba(57, 169, 0,.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--sicet-azul);
+    border-color: var(--sicet-azul)
+}
+
+.login-fondo{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, var(--sicet-verde), var(--color-principal-cian), var(--sicet-gris))
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background-color:#fff;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25)
+}
+
+.login-card.ancha {
+    max-width: 680px;
+}
+
+.login-encabezado {
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.login-encabezado h1{
+    color:var(--sicet-cambiar);
+    margin: 0.25rem 0
+}
+
+.login-pie {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--sicet-cambiar);
+    margin: 1.25rem 0 0;
+}
+
+.sidebar {
+    background-color: var(--sicet-cambiar) !important;
+    color: #fff
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, .75);
+    border-radius: .5rem;
+    margin-bottom: .25rem
+}
+
+.sidebar .nav-link:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: var(--sicet-cambiar);
+}
+
+@media (min-width: 992px) {
+    .sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: var(--sidebar-ancho)
+    }
+    .sidebar .offcanvas-body {
+        height: 100%;
+        overflow-y: auto;
+    }
+    .contenido {
+        margin-left: var(--sidebar-ancho)
+    }
+}
+
+.tarjetas-kpi {
+    border: 0;
+    border-left: 4px solid var(--sicet-cambiar);
+    transition: transform .2s, box-shadow .2s
+}
+
+.tarjetas-kpi:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12) !important
+}
+
+.icono-kpi {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .75rem;
+    font-size: 1.5rem;
+    color: #fff
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: .85rem;
+    flex-shrink: 0;
+}
+
+.pagination{
+    --bs-pagination-color: var(--sicet-);
+    --bs-pagination-active-bg: var(--sicet-cambiar);
+    --bs-pagination-active-border-color: var(--sicet-cambiar)
+}
+
+.tajeta-agregar {
+    border: 2px dashed #ced4da;
+    background-color: transparent;
+    color: #6c757d;
+    min-height: 200px;
+    transition: border-color .2s, color .2s;
+}
+
+.tarjetas-agregar:hover {
+    border-color: var(--sicet-cambiar);
+    color: var(--sicet-cambiar)
+}
+
+.miniatura {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    background-color: #eef2f5;
+    color: var(--sicet-cambiar);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.list-group {
+    --bs-list-group-active-bg: var(--sicet-cambiar);
+    --bs-list-group-active-bordr-color: var(--sicet-cambiar)
+}
