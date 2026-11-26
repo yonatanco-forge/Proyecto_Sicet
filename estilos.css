@@ -1,0 +1,67 @@
+:root {
+    --color-principal-cian:#53EAFD;
+    --sicet-gris:#A1A1A1;
+    --sicet-morado:#6E11B0;
+    --sicet-azul-oscuro:#00008B;
+    --sicet-azul:#6495ED;
+    --sicet-verde:#2E8700;
+    --sidebar-ancho: 250px
+}
+
+body {
+    margin: 10;
+    font-family: "segoe UI" Roboto, arial, sans-serif;
+    background-color: rgb(248,182,0);
+}
+
+.texto-sena{
+    color: var(--sicet-morado);
+}
+
+.btn-sena{
+    --bs-btn-color:#fff;
+    --bs-btn-bg:var(--color-principal-cian);
+    --bs-btn-border-color:var(--color-principal-cian);
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg:var(--sicet-morado);
+    --bs-btn-border-color:var(--sicet-morado);
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:var(--sicet-morado);
+    --bs-btn-active-border-color:var(--sicet-morado)
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus{
+    border-color:var(--sicet-azul-oscuro);
+    box-shadow: 0 0 0.25rem rgba(57, 169, 0,.25);
+}
+
+.form-check-input:checked:{
+    background-color: var(--sicet-azul);
+    border-color: var(--sicet-azul)
+}
+
+.login-fondo{
+    min-height: 100vh;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, var(--sicet-cambiar), var(--sena-cambiar))
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background-color:#fff;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-sizinfg: border-box;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25)
+}
+
+.login-card.ancha {
+    max-width: 680px;
+}
