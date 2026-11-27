@@ -55,7 +55,7 @@ body {
 .login-card {
     width: 100%;
     max-width: 420px;
-    background-color:#01e180;
+    background-color: linear-degradient(135deg, #000000, #ffff);
     border-radius: 1rem;
     padding: 2.5rem 2rem;
     box-sizing: border-box;
