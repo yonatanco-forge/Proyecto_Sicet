@@ -1,10 +1,12 @@
 :root {
     --color-principal-cian:#00B4D8;
+    --sicet-azul-claro: #EAF2F8;
+    --sicet-blanco: #FFFFFF;
     --sicet-gris: #eaf2f8;
     --sicet-morado:#6E11B0;
-    --sicet-azul-oscuro:#00008B;
+    --sicet-azul-oscuro:#14213D;
     --sicet-azul:#6495ED;
-    --sicet-verde:#14213D;
+    --sicet-verde:#2E8700;
     --sidebar-ancho: 250px
 }
 
@@ -15,7 +17,7 @@ body {
 }
 
 .texto-sena{
-    color: var(--sicet-morado);
+    color: var(--sicet-gris);
 }
 
 .btn-sena{
@@ -49,7 +51,7 @@ body {
     justify-content: center;
     padding-left: 30%;
     box-sizing: border-box;
-    background: linear-gradient(135deg, var(--sicet-verde), var(--color-principal-cian), var(--sicet-gris))
+    background: linear-gradient(135deg, var(--sicet-azul-oscuro), var(--color-principal-cian), var(--sicet-gris))
 }
 
 .login-card {
@@ -98,12 +100,12 @@ body {
 }
 
 .sidebar {
-    background-color: var(--sicet-cambiar) !important;
-    color: #fff
+    background-color: var(--sicet-azul-oscuro) !important;
+    color: #006eff
 }
 
 .sidebar .nav-link {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(249, 249, 249, 0.829);
     border-radius: .5rem;
     margin-bottom: .25rem
 }
@@ -115,7 +117,7 @@ body {
 
 .sidebar .nav-link.active {
     color: #fff;
-    background-color: var(--sicet-cambiar);
+    background-color: var(--color-principal-cian);
 }
 
 @media (min-width: 992px) {
@@ -137,7 +139,7 @@ body {
 
 .tarjetas-kpi {
     border: 0;
-    border-left: 4px solid var(--sicet-cambiar);
+    border-left: 4px solid var(--color-principal-cian);
     transition: transform .2s, box-shadow .2s
 }
 
